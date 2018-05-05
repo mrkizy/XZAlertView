@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hed-DQ-GOP">
+                                <rect key="frame" x="125" y="319.5" width="125" height="28"/>
+                                <state key="normal" title="标题" image="card_icon_select_black_0">
+                                    <color key="titleColor" red="0.1333333333" green="0.2274509804" blue="0.31372549020000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfM-eC-udj">
+                                <rect key="frame" x="250" y="319.5" width="125" height="28"/>
+                                <state key="normal" title="副标题" image="card_icon_select_black_0">
+                                    <color key="titleColor" red="0.1333333333" green="0.2274509804" blue="0.31372549020000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ec8-Xu-aRN">
+                                <rect key="frame" x="0.0" y="367.5" width="125" height="28"/>
+                                <state key="normal" title="内容" image="card_icon_select_black_0">
+                                    <color key="titleColor" red="0.1333333333" green="0.2274509804" blue="0.31372549020000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTN-gg-OYJ">
+                                <rect key="frame" x="250" y="367.5" width="125" height="28"/>
+                                <state key="normal" title="按钮2" image="card_icon_select_black_0">
+                                    <color key="titleColor" red="0.1333333333" green="0.2274509804" blue="0.31372549020000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We1-8K-PAm">
+                                <rect key="frame" x="125.5" y="367.5" width="125" height="28"/>
+                                <state key="normal" title="按钮1" image="card_icon_select_black_0">
+                                    <color key="titleColor" red="0.1333333333" green="0.2274509804" blue="0.31372549020000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWq-Gy-5B8">
+                                <rect key="frame" x="172" y="577" width="31" height="30"/>
+                                <state key="normal" title="预览"/>
+                                <connections>
+                                    <action selector="btnPreviewOnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qfl-Zy-EuD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示样式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RW2-CJ-0RE">
+                                <rect key="frame" x="146.5" y="120" width="82" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHl-I5-7gg">
+                                <rect key="frame" x="0.0" y="319" width="125" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="图片" image="card_icon_select_black_0">
+                                    <color key="titleColor" red="0.1333333333" green="0.2274509804" blue="0.31372549020000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RW2-CJ-0RE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="1Fk-tB-2fR"/>
+                            <constraint firstItem="Hed-DQ-GOP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6JS-0G-eAb"/>
+                            <constraint firstItem="Ec8-Xu-aRN" firstAttribute="centerX" secondItem="wHl-I5-7gg" secondAttribute="centerX" id="71f-ll-1QE"/>
+                            <constraint firstItem="We1-8K-PAm" firstAttribute="top" secondItem="Hed-DQ-GOP" secondAttribute="bottom" constant="20" id="8O3-Fx-e4H"/>
+                            <constraint firstItem="We1-8K-PAm" firstAttribute="width" secondItem="Hed-DQ-GOP" secondAttribute="width" id="BIh-PV-CIh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lWq-Gy-5B8" secondAttribute="bottom" constant="60" id="CIK-aK-MwP"/>
+                            <constraint firstItem="RW2-CJ-0RE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hqg-ot-4Ue"/>
+                            <constraint firstItem="wHl-I5-7gg" firstAttribute="centerY" secondItem="Hed-DQ-GOP" secondAttribute="centerY" id="JxU-tC-7t1"/>
+                            <constraint firstItem="Ec8-Xu-aRN" firstAttribute="width" secondItem="wHl-I5-7gg" secondAttribute="width" id="L0T-Yw-1Eo"/>
+                            <constraint firstItem="TfM-eC-udj" firstAttribute="leading" secondItem="Hed-DQ-GOP" secondAttribute="trailing" id="Mu5-ny-4Gy"/>
+                            <constraint firstItem="lWq-Gy-5B8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OC6-8m-fNG"/>
+                            <constraint firstItem="YTN-gg-OYJ" firstAttribute="centerX" secondItem="TfM-eC-udj" secondAttribute="centerX" id="Oja-Z1-6gG"/>
+                            <constraint firstItem="wHl-I5-7gg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TAX-hs-pta"/>
+                            <constraint firstItem="YTN-gg-OYJ" firstAttribute="width" secondItem="TfM-eC-udj" secondAttribute="width" id="Yyu-WW-3aL"/>
+                            <constraint firstItem="Ec8-Xu-aRN" firstAttribute="centerY" secondItem="We1-8K-PAm" secondAttribute="centerY" id="b4h-M1-Y7c"/>
+                            <constraint firstItem="We1-8K-PAm" firstAttribute="centerX" secondItem="Hed-DQ-GOP" secondAttribute="centerX" id="bgn-h5-uC9"/>
+                            <constraint firstItem="TfM-eC-udj" firstAttribute="width" secondItem="Hed-DQ-GOP" secondAttribute="width" id="dC2-FE-IFz"/>
+                            <constraint firstItem="wHl-I5-7gg" firstAttribute="width" secondItem="Hed-DQ-GOP" secondAttribute="width" id="dgE-Bl-QeQ"/>
+                            <constraint firstItem="YTN-gg-OYJ" firstAttribute="centerY" secondItem="We1-8K-PAm" secondAttribute="centerY" id="iCf-vg-Duh"/>
+                            <constraint firstItem="Hed-DQ-GOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lXP-FF-2CL"/>
+                            <constraint firstItem="wHl-I5-7gg" firstAttribute="trailing" secondItem="Hed-DQ-GOP" secondAttribute="leading" id="uo2-5j-Xgk"/>
+                            <constraint firstItem="TfM-eC-udj" firstAttribute="centerY" secondItem="Hed-DQ-GOP" secondAttribute="centerY" id="usB-kq-kI8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="YTN-gg-OYJ" id="RHg-1L-So9"/>
+                        <outlet property="btnConfirm" destination="We1-8K-PAm" id="XNa-J0-b9r"/>
+                        <outlet property="btnContent" destination="Ec8-Xu-aRN" id="uN2-3x-sZ9"/>
+                        <outlet property="btnImg" destination="wHl-I5-7gg" id="Efh-Vy-qU6"/>
+                        <outlet property="btnSubTitle" destination="TfM-eC-udj" id="uID-XN-q82"/>
+                        <outlet property="btnTitle" destination="Hed-DQ-GOP" id="Q6k-jN-yaS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card_icon_select_black_0" width="28" height="28"/>
+    </resources>
+</document>
