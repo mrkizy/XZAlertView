@@ -6,9 +6,9 @@
 <h2>效果图：</h2><br>
 <img src = "https://github.com/mrkizy/XZAlertView/blob/master/result5.png" />  
 <img src = "https://github.com/mrkizy/XZAlertView/blob/master/result6.png" /><br>
+<img src = "https://github.com/mrkizy/XZAlertView/blob/master/result3.png" />     
 <img src = "https://github.com/mrkizy/XZAlertView/blob/master/result1.png" />     
 <img src = "https://github.com/mrkizy/XZAlertView/blob/master/result2.png" /><br>
-<img src = "https://github.com/mrkizy/XZAlertView/blob/master/result3.png" />     
 <img src = "https://github.com/mrkizy/XZAlertView/blob/master/result4.png" /><br>
 <h2 name="usage">如何使用XZAlertView</h2>
 /**
