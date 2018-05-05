@@ -1,6 +1,7 @@
 # XZAlertView
 一个支持自定义的图文弹窗<br>
-支持图片、标题、副标题、内容、按钮自定义搭配<br><br>
+支持图片、标题、副标题、内容、按钮自定义搭配<br>
+支持不同动画显示<br><br>
 <a href="#usage">使用方法</a><br>
 <h2>效果图：</h2><br>
 <img src = "https://github.com/mrkizy/XZAlertView/blob/master/result5.png" />     
