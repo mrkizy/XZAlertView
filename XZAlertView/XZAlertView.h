@@ -27,6 +27,14 @@ typedef void (^MKIntegerBlock)(NSInteger result);
 
 @interface XZAlertView : UIView
 
+/**
+ *  @decription 动画类型 值为：
+        showAnimationType_default,  //默认动画（无）
+        showAnimationType_moveIn,   //移入
+        showAnimationType_Push,    //push方式
+        showAnimationType_Fade, //淡入淡出
+        showAnimationType_Reveal,   //渐入
+ */
 @property (nonatomic, assign) showAnimationType animationType;
 
 /**
@@ -34,11 +42,37 @@ typedef void (^MKIntegerBlock)(NSInteger result);
  *  @warning    需要结合animationType使用，个别动画效果不支持subType
  */
 @property (nonatomic, copy) NSString *subType;
+
+/**
+ * @decription alertview
+ *  @warning 不要尝试对该属性复制
+ */
 @property (nonatomic, weak) GuideMaskAlertView *alertView;
+
+
+/**
+ *  @decription 构造方法
+ *  @param  title 标题，可nil
+ *  @param  subTitle 副标题，可nil
+ *  @param  imgUrlStr  图片，支持本地和网络图片
+ *  @param  cancelStr  按钮1，可nil
+ *  @param  commitStr  按钮2，可nil
+ *  @param  block  按钮点击回调
+ *  @warning    利用构造方法初始化，需要调用-(void)show才能显示
+ */
 
 - (instancetype)initWithTitle:(NSString *)title content:(NSString *)content cancel:(NSString *)cancelStr commit:(NSString *)commitStr block:(MKIntegerBlock)block;
 - (instancetype)initWithTitle:(NSString *)title subTitle:(NSString *)subTitle content:(NSString *)content imgUrlStr:(NSString *)imgUrlStr cancel:(NSString *)cancelStr commit:(NSString *)commitStr block:(MKIntegerBlock)block;
 
+/**
+ *  @decription 工厂方法
+ *  @param  title 标题，可nil
+ *  @param  subTitle 副标题，可nil
+ *  @param  imgUrlStr  图片，支持本地和网络图片
+ *  @param  cancelStr  按钮1，可nil
+ *  @param  commitStr  按钮2，可nil
+ *  @param  block  按钮点击回调
+ */
 + (void)showTitle:(NSString *)title subTitle:(NSString *)subTitle content:(NSString *)content imgView:(NSString *)imgUrl cancel:(NSString *)cancelStr commit:(NSString *)commitStr block:(MKIntegerBlock)block;
 
 + (void)showTitle:(NSString *)title content:(NSString *)content cancel:(NSString *)cancelStr commit:(NSString *)commitStr block:(MKIntegerBlock)block;
